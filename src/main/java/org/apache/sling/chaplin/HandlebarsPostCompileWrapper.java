@@ -32,7 +32,7 @@ public class HandlebarsPostCompileWrapper implements PostCompileProcess {
     public void activate(ComponentContext context)
     {
     	Dictionary config = context.getProperties();
-    	handlebarsTemplateSourcePathFilter = PropertiesUtil.toString(config.get(HANDLEBARS_TEMPLATE_SOURCE_PATH_FILTER), "/apps/chaplin/templates");
+    	handlebarsTemplateSourcePathFilter = PropertiesUtil.toString(config.get(HANDLEBARS_TEMPLATE_SOURCE_PATH_FILTER), "/apps/chaplin/handlebars-templates");
     }
     
     public InputStream processCompiledStream(InputStream compiledSource) {
